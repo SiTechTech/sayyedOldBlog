@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Press+Start+2P&family=Rubik+Glitch&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    
+    <title>Sayyeds Pro Blog</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        video{
+            position: relative;
+            width: 100%;
+            top: 0;
+            height: auto;
+        }
+        .letters{
+            height: 100px;
+        }
+    </style>
+    </head>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li class="mobile"><a href="about-me.html">About Me</a></li>
+                
+                <li class="logo"><a href="index.html">Coding Logo</a></li>
+                
+                <li class="desktop"><a href="about-me.html">About Me</a></li>
+
+                
+                
+                
+                <!-- <li><a href="index.html">Contact</a></li> -->
+
+
+            </ul>
+        </nav>
+        <!-- <h1 class="Title">Home</h1> -->
+    </header>
+
+    <section class="features">
+        <figure>
+            <a href="Beginner.html">
+                <!-- <img src="images/tabs1.png" alt="Beginner"></a> -->
+        <figcaption>Beginner</figcaption>
+        </figure>
+        <figure>
+            <a href="Advanced.html">
+                <!-- <img src="images/tabs2.png" alt="Advanced"></a>  -->
+            <figcaption>Advanced</figcaption>
+            </figure>
+            <figure>
+                <a href="Pro.html">
+                    <!-- <img src="images/tabs3.png" alt="Pro"></a> -->
+                    <figcaption>ProLevel</figcaption>
+                </figure>
+            </section>
+            
+            <div class="container">
+
+                <div class="contianer-mobile">
+                <div class="video-link-container">
+                
+                    <!-- <video width="1220" height="680">
+                    <source src="film/beginner1.mp4" type="video/mp4">
+                    </video>              -->
+                    
+                    
+                    <a href="film/pro1.mp4" class="video-links">P1/MovingBlock</a>
+                    <a href="film/pro2.mp4" class="video-links">P1/FlipGame</a>
+    
+                </div>
+    
+            </div>
+    
+                <div class="video-container">
+                    
+                    
+                    <video src="film/pro1.mp4" loop controls class="video"></video>
+
+                
+                </div>
+    
+                <script>
+                    document.querySelectorAll('.video-links').forEach(links=>{
+                        links.addEventListener('click',(e) =>{
+                            e.preventDefault();
+                            var src = links.getAttribute('href');
+                            document.querySelector('.video').src = src;
+                            document.querySelector('.video').play();
+                        });
+                    });
+                </script>
+    
+    
+    <footer>
+        ~ SiTechTech
+    </footer>
+
+</body>
+
+</html>

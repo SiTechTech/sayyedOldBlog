@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Nanum+Gothic+Coding:wght@700&family=Press+Start+2P&family=Rubik+Glitch&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&family=Press+Start+2P&family=Rubik+Glitch&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    
+    <title>Sayyeds Blog</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <style>
+            /*header is where all are "home about us and beginner advanced and pro" is located, same for "a" */
+            
+            body{
+                background: black;   
+            }
+
+            header{
+            background-color: black;
+            background-image: url("images/background1.png"); 
+           /*background-size: 50%;/*    /* this is size of my background, it shows multiple backgrounds*/
+            background-position: center; 
+            height: 100%;  /*This controls the hieght of the screen in percents */
+            width: 100%; 
+            padding: 300px;     /*this moves everything down to the middle*/
+            text-align: center;
+            font-family: "Press Start 2P"; 
+} 
+
+            header .logo a{
+                background-image: url("images/logo1.png");
+                background-size: 300px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                position: relative;
+                height: 300px;     /* This makes the words move down the screen*/
+                text-indent: -9999999px;
+                top: -30px;
+                width: 330px;
+
+}
+
+            a{
+                font-size:40px;
+            }
+
+            .features{
+                float: center;
+                flex-direction: column;
+                position: relative; left: -180px;
+            
+            }
+            
+            .letters{
+                font-size: 40px;
+            }
+            
+            @media screen and (max-width: 1586px) {
+                header .logo a{
+                background-size: 130px;
+                height: 130px;     /* This makes the words move down the screen*/
+                width: 130px;
+    }
+} 
+
+
+            @media screen and (max-width: 1586px) {
+                .base1{              /*this is the text for "home"*/
+                    font-size: 20px;       
+    }
+} 
+            @media screen and (max-width: 1586px) {
+                .base2{             /*this is the text for "about us"*/
+                    font-size: 20px;   
+   
+    }
+} 
+
+            @media screen and (max-width: 1586px) {
+                .letters{
+                    font-size: 20px;     /*this is for the section where begginer advance and pro is*/
+                    padding: 110px;   
+    }
+}
+
+            @media screen and (max-width: 1122px) {
+                header .logo a{
+                background-image: url("images/logo1.png");
+                background-size: 200px;
+                background-repeat: no-repeat;
+                display: inline-block;
+                position: relative;
+                height: 200px;    
+                text-indent: -9999999px;
+                top: -30px;
+                width: 200px;  
+    }
+} 
+
+            @media screen and (max-width: 1121px) {
+                .letters{
+                    font-size: 20px;        
+                    padding: 140px;
+    }
+}
+
+            @media screen and (max-width: 1122px) {
+                .base1{   
+                    color:red;  /*THIS IS TO MAKE THE LETTER HOME DISAPEAR*/
+                    display: none;
+    }
+} 
+
+            @media screen and (max-width: 1122px) {
+                .base2{   
+                    padding: 20px;
+
+
+    }
+} 
+            
+             @media screen and (max-width: 800px) {
+                .letters{
+                    font-size: 20px;        
+                    padding: 160px;
+    }
+}  
+
+            @media screen and (max-width: 415px) {
+                .letters{
+                    font-size: 20px;        
+                    padding: 260px;
+    }
+}
+
+footer{
+    font-size: 15px;
+    color: white;
+    /* text-align: center; */
+}
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="base1">Home</a></li>
+                <li class="mobile"><a href="about-me.html">AboutMe</a></li>
+                
+                <li class="logo"><a href="index.html">Coding Logo</a></li>
+                
+                <li class="desktop" ><a href="about-me.html" class="base2">AboutMe</a></li>
+
+                <!-- <li><a href="index.html">Contact</a></li> -->
+                
+                <section class="features">
+                    <figure>
+                        <a href="Beginner.html">
+                            <!-- <img src="images/tabs1.png" alt="Beginner"></a> -->
+                     <u class="letters">Beginner</u> 
+                    </figure>
+                    <figure>
+                       <a href="Advanced.html">
+                        <!-- <img src="images/tabs2.png" alt="Advanced"></a>  -->
+                         <u class="letters">Advanced</u>
+                        </figure>
+                        <figure>
+                            <a href="Pro.html">
+                            <!-- <img src="images/tabs3.png" alt="Pro"></a> -->
+                             <u class="letters">ProLevel</u>
+                            </figure>
+                        </section>
+
+            </ul>
+        </nav>
+        <!-- <h1 class="Title">Home</h1> -->
+    </header>
+
+    <!-- <section class="features">
+        <figure>
+            <a href="Beginner.html">
+                <img src="images/tabs1.png" alt="Beginner"></a>
+         <figcaption>Beginner Start</figcaption> 
+        </figure>
+        <figure>
+           <a href="Advanced.html">
+            <img src="images/tabs2.png" alt="Advanced"></a> 
+             <figcaption>Advanced Section</figcaption> 
+            </figure>
+            <figure>
+                <a href="Pro.html">
+                <img src="images/tabs3.png" alt="Pro"></a>
+                 <figcaption>Pro</figcaption> 
+                </figure>
+            </section> 
+     -->
+            
+
+
+            
+    <footer>
+        ~ SiTechTech
+    </footer> 
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+body{
+    background: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Press Start 2P"; */
+
+}
+
+/* .Title{
+    font-family: "Press Start 2P";
+} */
+
+/* Header */
+
+header{
+    background-color: black;
+    background-image: url("images/background1.png");
+    background-size: 80%;
+    background-position: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Press Start 2P"; 
+}
+
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: none;
+    margin-top: 20px;
+}
+
+header .mobile{
+    display: none;
+}
+
+header .logo a{
+    background-image: url("images/logo1.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    text-indent: -9999999px;
+    top: -30px;
+    width: 200px;
+}
+
+
+
+
+/* Features */
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li{
+    display:inline-block;
+    margin-right: 40px;
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 420px) {
+    header .mobile{
+        display: inline-block;
+    }
+
+    header .desktop{
+        display: none;
+    }
+}
+
+.features{
+    /* background-image: url(../images/background1.png);   */
+    /*background-color: white; /* /*this is the color of are background of are code*/
+    color: black;
+    padding: 10px;      /* THIS IS WHERE MY COMPUTER IMAGE BACKGROUND IS */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+
+}
+
+.features figure{
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100px;
+
+}
+
+.features figure img{
+    /* background-image: url(../images/background1.png);  */
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20%;     /* THIS IS WHERE MY COMPUTER IMAGE IS */
+    box-shadow: grey 0 0 10px;
+    width: 200px;
+
+}
+
+
+
+
+/* Responsive Rules */
+
+
+@media screen and (max-width: 929px) {
+    .features{
+        display: block;
+    }
+} 
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Press Start 2P";
+    color: white;
+
+} 
+
+/* VIDEO SETTINGS */
+
+.container{
+    background: white;  /* THIS IS THE BACKGROUND OF ARE VIDEO SCREEN */
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    box-shadow: 0 10px 15px black; 
+    padding: 20px;
+    font-family: "Press Start 2P";
+    background-image: url(../images/background1.png);  /* FOR SOME REASON THIS HAS TO BE PLACED DOWN BELOW EVERTHING FOR IT TO WORK IM CONFUSED ON THAT */
+} 
+
+.container .video-link-container{
+    background-color: black;  /* THIS CHANGES THE COLOR OF THE WORDS ON THE LEFT BECAUSE THEY CHANGE ONE BY ONE */
+    flex: 1 1 400px;
+} 
+
+.container .video-container{
+    flex: 1 1 400px;
+}
+
+.container .video-link-container .video-links:nth-child(odd){
+    background-color: black;   /*THIS IS WHERE YOU CAN CHANGE THE COLOR OF THE WORDS ON THE LEFT OF ARE CONTAINER */
+}
+
+.container .video-link-container .video-links:hover{
+    background-color: lightgreen;
+    color: white;
+} 
+
+
+.container .video-link-container .video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.container .video-link-container .video-links{
+    font-size: 20px;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Rules */
+/* @media screen and (max-width: 1967px) {
+    .container{
+        align-items: center;
+        width: 480px;
+        height: 200px;
+    }
+
+ .container{
+        display: ;
+    }
+}   */
+
+/* Footer */
+
+/* footer{
+    background: black;
+    padding: 10px 1100px;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+} 
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
